@@ -1,0 +1,492 @@
+{
+  "no": "Raiz",
+  "pergunta": "É um animal? ",
+  "sim": {
+    "no": "Animal",
+    "pergunta": "É um mamífero? ",
+    "sim": {
+      "no": "Mamífero",
+      "pergunta": "É silvestre? ",
+      "sim": {
+        "no": "Silvestre",
+        "pergunta": "É carnívoro? ",
+        "sim": {
+          "no": "Carnívoro",
+          "pergunta": "É felino? ",
+          "sim": {
+            "no": "Felino",
+            "pergunta": "Tem juba? ",
+            "sim": {
+              "no": "Leão",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Tigre",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Aquático",
+            "pergunta": "É aquático? ",
+            "sim": {
+              "no": "Baleia",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Urso",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Quatro patas",
+          "pergunta": "Anda em quatro patas? ",
+          "sim": {
+            "no": "Trobam",
+            "pergunta": "Tem tromba? ",
+            "sim": {
+              "no": "Elefante",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Girafa",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Voa",
+            "pergunta": "Voa? ",
+            "sim": {
+              "no": "Morcego",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Macaco",
+              "pergunta": null
+            }
+          }
+        }
+      },
+      "nao": {
+        "no": "Alimento",
+        "pergunta": "Produz alimento para humanos ocidentais? ",
+        "sim": {
+          "no": "Leite",
+          "pergunta": "Humanos consomem seu leite? ",
+          "sim": {
+            "no": "Lã",
+            "pergunta": "Produz lã? ",
+            "sim": {
+              "no": "Ovelha",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Vaca",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Porco",
+            "pergunta": null
+          }
+        },
+        "nao": {
+          "no": "Late",
+          "pergunta": "Late? ",
+          "sim": {
+            "no": "Cachorro",
+            "pergunta": null
+          },
+          "nao": {
+            "no": "Mia",
+            "pergunta": "Mia? ",
+            "sim": {
+              "no": "Gato",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Hamster",
+              "pergunta": null
+            }
+          }
+        }
+      }
+    },
+    "nao": {
+      "no": "Inseto",
+      "pergunta": "É um inseto? ",
+      "sim": {
+        "no": "Voa",
+        "pergunta": "Voa? ",
+        "sim": {
+          "no": "Doença",
+          "pergunta": "Transmite doença? ",
+          "sim": {
+            "no": "Rural",
+            "pergunta": "É encontrado na área rural? ",
+            "sim": {
+              "no": "Barbeiro",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Mosquito",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Mel",
+            "pergunta": "Produz mel? ",
+            "sim": {
+              "no": "Abelha",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Borboleta",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Aracnideo",
+          "pergunta": "É um aracnídeo? ",
+          "sim": {
+            "no": "Teia",
+            "pergunta": "",
+            "sim": {
+              "no": "Aranha",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Escorpião",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Patas",
+            "pergunta": "Possui patas? ",
+            "sim": {
+              "no": "Formiga",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Minhoca",
+              "pergunta": null
+            }
+          }
+        }
+      },
+      "nao": {
+        "no": "Ave",
+        "pergunta": "É uma ave? ",
+        "sim": {
+          "no": "Voa",
+          "pergunta": "Voa? ",
+          "sim": {
+            "no": "Carnivora",
+            "pergunta": "É carnívora? ",
+            "sim": {
+              "no": "Gavião",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Tucano",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Pena",
+            "pergunta": "Possui pena? ",
+            "sim": {
+              "no": "Galinha",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Pinguim",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Réptil",
+          "pergunta": "É um réptil? ",
+          "sim": {
+            "no": "Patas",
+            "pergunta": "Possui patas? ",
+            "sim": {
+              "no": "Jacaré",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Cobra",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Anfíbio",
+            "pergunta": "É um anfíbio? ",
+            "sim": {
+              "no": "Sapo",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Peixe",
+              "pergunta": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "nao": {
+    "no": "Objeto",
+    "pergunta": "É uma ferramenta? ",
+    "sim": {
+      "no": "Eletricidade",
+      "pergunta": "Precisa de eletricidade? ",
+      "sim": {
+        "no": "Teclado",
+        "pergunta": "Possui teclado? ",
+        "sim": {
+          "no": "Função única",
+          "pergunta": "Possui uma única função? ",
+          "sim": {
+            "no": "Visor",
+            "pergunta": "Possui visor/display? ",
+            "sim": {              
+              "no": "Calculadora",
+              "pergunta": null
+            },  
+            "nao": {
+              "no": "Controle remoto",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Bolso",
+            "pergunta": "Cabe no bolso? ",
+            "sim": {
+              "no": "Celular",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Notebook",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Botões",
+          "pergunta": "Possui algum(s) botão/botões? ",
+          "sim": {
+            "no": "Tempo",
+            "pergunta": "Serve para medir o tempo? ",
+            "sim": {
+              "no": "Relógio",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Furadeira",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Luz",
+            "pergunta": "Server para iluminação? ",
+            "sim": {
+              "no": "Lâmpada",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Bateria",
+              "pergunta": null
+            }
+          }
+        }
+      },
+      "nao": {
+        "no": "Cortante",
+        "pergunta": "É utilizado para cortar? ",
+        "sim": {
+          "no": "Madeira",
+          "pergunta": "É utilizado para cortar madeira? ",
+          "sim": {
+            "no": "Dentes",
+            "pergunta": "Possui dentes? ",
+            "sim": {
+              "no": "Serra",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Machado",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Papel",
+            "pergunta": "É utilizado para cortar papel? ",
+            "sim": {
+              "no": "Tesoura",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Faca",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Obra",
+          "pergunta": "É encontrado em obras? ",
+          "sim": {
+            "no": "Prego",
+            "pergunta": "É utilizado em pregos? ",
+            "sim": {
+              "no": "Martelo",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Chave de fenda",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Tinta",
+            "pergunta": "Possui tinta? ",
+            "sim": {
+              "no": "Caneta",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Lápis",
+              "pergunta": null
+            }
+          }
+        }
+      }
+    },
+    "nao": {
+      "no": "Vestimenta",
+      "pergunta": "É uma vestimenta? ",
+      "sim": {
+        "no": "Acessório",
+        "pergunta": "É um acessório? ",
+        "sim": {
+          "no": "Braço",
+          "pergunta": "É utilizado nos menbros superios? ",
+          "sim": {
+            "no": "Dedo",
+            "pergunta": "É utilizado no dedo? ",
+            "sim": {
+              "no": "Anel",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Pulseira",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Pescoço",
+            "pergunta": "É utilizado no pescoço? ",
+            "sim": {
+              "no": "Cordão",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Chapeu",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Banho",
+          "pergunta": "É roupa de banho? ",
+          "sim": {
+            "no": "Masculino",
+            "pergunta": "É masculino? ",
+            "sim": {
+              "no": "Sunga",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Biquini",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Frio",
+            "pergunta": "É roupa de frio? ",
+            "sim": {
+              "no": "Casaco",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Camisa",
+              "pergunta": null
+            }
+          }
+        }
+      },
+      "nao": {
+        "no": "Alimento",
+        "pergunta": "É um alimento? ",
+        "sim": {
+          "no": "Fruta",
+          "pergunta": "É uma fruta? ",
+          "sim": {
+            "no": "Amarela",
+            "pergunta": "É amarela? ",
+            "sim": {
+              "no": "Banana",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Maça",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Legume",
+            "pergunta": "É um legume? ",
+            "sim": {
+              "no": "Batata",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Biscoito",
+              "pergunta": null
+            }
+          }
+        },
+        "nao": {
+          "no": "Valioso",
+          "pergunta": "É valioso? ",
+          "sim": {
+            "no": "Metal",
+            "pergunta": "É um metal? ",
+            "sim": {
+              "no": "Pepita de ouro",
+              "pergunta": null
+            },
+            "nao": {
+              "no": "Diamante",
+              "pergunta": null
+            }
+          },
+          "nao": {
+            "no": "Vegetal",
+            "pergunta": "É um vegetal? ",
+            "sim": {
+              "no": "Árvore",
+              "pergunta": null
+            },
+            "nao": { 
+              "no": "Pedra",
+              "pergunta": null
+            }
+          }
+        }
+      }
+    }
+  }
+}   

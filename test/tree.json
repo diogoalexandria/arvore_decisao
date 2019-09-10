@@ -1,0 +1,31 @@
+[
+    {
+        "node": "Raiz",
+        "father": null
+    },
+    {
+        "node": "Animal",
+        "father": "Raiz"
+    },
+    {
+        "node": "Objeto",
+        "father": "Raiz"
+    },
+    {
+        "node": "Vaca",
+        "father": "Animal"
+    },
+    {
+        "node": "Cachorro",
+        "father": "Animal"
+    },
+    {
+        "node": "Martelo",
+        "father": "Objeto"
+    },
+    {
+        "node": "Lápis",
+        "father": "Objeto"
+    }
+
+]
