@@ -4,17 +4,25 @@ html(lang='pt')
         title Inteligencia computacional
         script(src='https://unpkg.com/axios/dist/axios.min.js')
     body
-        h1 #{title}
-        - var btnType = 'info'
-        - var btnSize = 'lg'
-        button(type='button' class='btn btn-' + btnType + ' btn-' + btnSize onclick="postFunction()") #{botao_1}
-        |        
-        button(type='button' class=`btn btn-${btnType} btn-${btnSize}` onclick="postFunction()") #{botao_2}
+        h1 #{message}
+        if final_answer
+            - var btnType = 'info'
+            - var btnSize = 'lg'
+            button(type='button' class='btn btn-' + btnType + ' btn-' + btnSize onclick=`postFunction('${button_yes}')`) Sim
+            |        
+            button(type='button' class=`btn btn-${btnType} btn-${btnSize}` onclick=`postFunction('${button_no}')`) Não
+
         script.
-            var postFunction = () => {
-                console.log("Clicado")
-                axios.post('/answer', {test: "testando"})
-                    .then(() => {
+            var postFunction = (name_button) => {                               
+                axios.post('/answer', {
+                        name: name_button                        
+                    })
+                    .then((res) => {                        
+                        const url = res.request.responseURL
+                        window.location.replace(url)
                         console.log('Ok')
+                    })
+                    .catch((err) => {
+                        console.log(err)
                     })
             }

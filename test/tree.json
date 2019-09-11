@@ -1,9 +1,11 @@
 [
     {
+        "question": "É um animal?", 
         "node": "Raiz",
         "father": null
     },
-    {
+    {   
+        "question": "Late?",
         "node": "Animal",
         "father": "Raiz"
     },
