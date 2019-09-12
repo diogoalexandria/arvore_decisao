@@ -1,478 +1,794 @@
-{
-    "question": "É um animal?", 
-    "node": "Raiz",
-    "father": null
-}
-{   
-    "question": "É mamífero?",
-    "last_answer": true,
-    "node": "Mamífero",        
-    "father": "Raiz"
-}
-{   
-    "question": "É silvestre?",
-    "last_answer": true,
-    "node": "Silvestre",        
-    "father": "Mamífero"
-}
-{   
-    "question": "É carnívoro?",
-    "last_answer": true,
-    "node": "Carnívoro",        
-    "father": "Silvestre"
-}
-{   
-    "question": "É felino?",
-    "last_answer": true,
-    "node": "Felino",        
-    "father": "Carnívoro"
-}
-{   
-    "question": "Tem juba?",
-    "last_answer": true,
-    "node": "Juba",        
-    "father": "Felino"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Leão",        
-    "father": "Juba",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Tigre",        
-    "father": "Juba",
-    "termination": ""
-}
-{   
-    "question": "É aquático?",
-    "last_answer": false,
-    "node": "Aquático",        
-    "father": "Felino"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Baleia",        
-    "father": "Aquático",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Urso",        
-    "father": "Aquático",
-    "termination": ""
-}
-{   
-    "question": "Anda em 4 patas?",
-    "last_answer": false,
-    "node": "Quatro patas",        
-    "father": "Carnívoro"
-}
-{   
-    "question": "Possui tromba?",
-    "last_answer": true,
-    "node": "Tromba",        
-    "father": "Quatro patas"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Girafa",        
-    "father": "Tromba",
-    "termination": "a"
-}
-{   
-    "question": "É voador?",
-    "last_answer": false,
-    "node": "Mamífero Voador",        
-    "father": "Quatro patas"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Morcego",        
-    "father": "Mamífero Voador",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Macaco",        
-    "father": "Mamífero Voador",
-    "termination": ""
-}
-{   
-    "question": "Produz alimentos para humanos ocidentais?",
-    "last_answer": false,
-    "node": "Alimento",        
-    "father": "Silvestre"
-}
-{   
-    "question": "Humanos consomem a sua produção de leite?",
-    "last_answer": true,
-    "node": "Leite",        
-    "father": "Alimento"
-}
-{   
-    "question": "Produz lã?",
-    "last_answer": true,
-    "node": "Lã",        
-    "father": "Leite"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Ovelha",        
-    "father": "Lã",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Vaca",        
-    "father": "Lã",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Porco",        
-    "father": "Leite",
-    "termination": ""
-}
-{   
-    "question": "Late?",
-    "last_answer": false,
-    "node": "Late",        
-    "father": "Alimento"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Cachorro",        
-    "father": "Late",
-    "termination": ""
-}
-{   
-    "question": "Mia?",
-    "last_answer": false,
-    "node": "Mia",        
-    "father": "Late",    
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Gato",        
-    "father": "Mia",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Hamster",        
-    "father": "Mia",
-    "termination": ""
-}
-{   
-    "question": "É silvestre?",
-    "last_answer": false,
-    "node": "Inseto",        
-    "father": "Mamífero"
-}
-{   
-    "question": "Voa?",
-    "last_answer": true,
-    "node": "Inseto Voador",        
-    "father": "Inseto"
-}
-{   
-    "question": "Transmite doenças a humanos?",
-    "last_answer": true,
-    "node": "Doença",        
-    "father": "Inseto Voador"
-}
-{   
-    "question": "É encontrado em sua maioria em áreas rurais?",
-    "last_answer": true,
-    "node": "Rural",        
-    "father": "Doença"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Barbeiro",        
-    "father": "Rural",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Mosquito",        
-    "father": "Rural",
-    "termination": ""
-}
-{   
-    "question": "Produz mel?",
-    "last_answer": false,
-    "node": "Mel",        
-    "father": "Doença"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Abelha",        
-    "father": "Mel",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Borboleta",        
-    "father": "Mel",
-    "termination": "a"
-}
-{   
-    "question": "É um aracnídeo?",
-    "last_answer": false,
-    "node": "Aracnídeo",        
-    "father": "Inseto Voador"
-}
-{   
-    "question": "Solta teia?",
-    "last_answer": true,
-    "node": "Teia",        
-    "father": "Aracnídeo"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Aranha",        
-    "father": "Teia",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Escorpião",        
-    "father": "Teia",
-    "termination": ""
-}
-{   
-    "question": "Possui patas?",
-    "last_answer": false,
-    "node": "Patas",        
-    "father": "Aracnídeo"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Formiga",        
-    "father": "Patas",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Minhoca",        
-    "father": "Patas",
-    "termination": "a"
-}
-{   
-    "question": "É uma ave?",
-    "last_answer": false,
-    "node": "Ave",        
-    "father": "Inseto"
-}
-{   
-    "question": "Voa?",
-    "last_answer": true,
-    "node": "Ave Voadora",        
-    "father": "Ave"
-}
-{   
-    "question": "É carnívora?",
-    "last_answer": true,
-    "node": "Carnívora",        
-    "father": "Ave Voadora"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Gavião",        
-    "father": "Carnívora",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Tucano",        
-    "father": "Carnívora",
-    "termination": ""
-}
-{   
-    "question": "Pussui penas?",
-    "last_answer": false,
-    "node": "Pena",        
-    "father": "Ave Voadora"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Galinha",        
-    "father": "Pena",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Pinguim",        
-    "father": "Pena",
-    "termination": ""
-}
-{   
-    "question": "É um réptil?",
-    "last_answer": false,
-    "node": "Réptil",        
-    "father": "Ave"
-}
-{   
-    "question": "Possui patas?",
-    "last_answer": true,
-    "node": "Réptil Patas",        
-    "father": "Réptil"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Jacaré",        
-    "father": "Réptil Patas",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Cobra",        
-    "father": "Réptil Patas",
-    "termination": "a"
-}
-{   
-    "question": "É um anfíbio?",
-    "last_answer": true,
-    "node": "Anfíbio",        
-    "father": "Réptil"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Sapo",        
-    "father": "Anfíbio",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Peixe",        
-    "father": "Anfíbio",
-    "termination": ""
-}
-{   
-    "question": "É uma ferramenta?",
-    "last_answer": false,
-    "node": "Ferramenta",        
-    "father": "Raiz"
-}
-{   
-    "question": "Precisa de eletricidade para ter utilidade?",
-    "last_answer": true,
-    "node": "Elericidade",        
-    "father": "Ferramenta"
-}
-{   
-    "question": "Possui algum tipo de teclado?",
-    "last_answer": true,
-    "node": "Teclado",        
-    "father": "Elericidade"
-}
-{   
-    "question": "Possui uma única função?",
-    "last_answer": true,
-    "node": "Função única",        
-    "father": "Teclado"
-}
-{   
-    "question": "Possui algum tipo de visor/display?",
-    "last_answer": true,
-    "node": "Visor",        
-    "father": "Função única"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Calculadora",        
-    "father": "Visor",
-    "termination": "a"
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Controle Remoto",        
-    "father": "Visor",
-    "termination": ""
-}
-{   
-    "question": "Cabe no bolso?",
-    "last_answer": false,
-    "node": "Bolso",        
-    "father": "Função única"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Celular",        
-    "father": "Bolso",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Notebook",        
-    "father": "Bolso",
-    "termination": ""
-}
-{   
-    "question": "Possui algum tipo botão no objeto?",
-    "last_answer": false,
-    "node": "Botões",        
-    "father": "Teclado"
-}
-{   
-    "question": "É utilizado para marcar o tempo?",
-    "last_answer": true,
-    "node": "Tempo",        
-    "father": "Botões"
-}
-{   
-    "question": null,
-    "last_answer": true,
-    "node": "Relógio",        
-    "father": "Tempo",
-    "termination": ""
-}
-{   
-    "question": null,
-    "last_answer": false,
-    "node": "Furadeira",        
-    "father": "Tempo",
-    "termination": "a"
-}
-{   
-    "question": "É utilizado para marcar o tempo?",
-    "last_answer": true,
-    "node": "Tempo",        
-    "father": "Botões"
-}
+
+    {
+        "question": "É um animal?", 
+        "name": "Raiz",
+        "father": null
+    }
+    {   
+        "question": "É mamífero?",
+        "last_answer": true,
+        "name": "Mamífero",        
+        "father": "Raiz"
+    }
+    {   
+        "question": "É silvestre?",
+        "last_answer": true,
+        "name": "Silvestre",        
+        "father": "Mamífero"
+    }
+    {   
+        "question": "É carnívoro?",
+        "last_answer": true,
+        "name": "Carnívoro",        
+        "father": "Silvestre"
+    }
+    {   
+        "question": "É felino?",
+        "last_answer": true,
+        "name": "Felino",        
+        "father": "Carnívoro"
+    }
+    {   
+        "question": "Tem juba?",
+        "last_answer": true,
+        "name": "Juba",        
+        "father": "Felino"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Leão",        
+        "father": "Juba",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Tigre",        
+        "father": "Juba",
+        "termination": ""
+    }
+    {   
+        "question": "É aquático?",
+        "last_answer": false,
+        "name": "Aquático",        
+        "father": "Felino"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Baleia",        
+        "father": "Aquático",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Urso",        
+        "father": "Aquático",
+        "termination": ""
+    }
+    {   
+        "question": "Anda em 4 patas?",
+        "last_answer": false,
+        "name": "Quatro patas",        
+        "father": "Carnívoro"
+    }
+    {   
+        "question": "Possui tromba?",
+        "last_answer": true,
+        "name": "Tromba",        
+        "father": "Quatro patas"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Girafa",        
+        "father": "Tromba",
+        "termination": "a"
+    }
+    {   
+        "question": "É voador?",
+        "last_answer": false,
+        "name": "Mamífero Voador",        
+        "father": "Quatro patas"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Morcego",        
+        "father": "Mamífero Voador",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Macaco",        
+        "father": "Mamífero Voador",
+        "termination": ""
+    }
+    {   
+        "question": "Produz alimentos para humanos ocidentais?",
+        "last_answer": false,
+        "name": "Alimento",        
+        "father": "Silvestre"
+    }
+    {   
+        "question": "Humanos consomem a sua produção de leite?",
+        "last_answer": true,
+        "name": "Leite",        
+        "father": "Alimento"
+    }
+    {   
+        "question": "Produz lã?",
+        "last_answer": true,
+        "name": "Lã",        
+        "father": "Leite"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Ovelha",        
+        "father": "Lã",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Vaca",        
+        "father": "Lã",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Porco",        
+        "father": "Leite",
+        "termination": ""
+    }
+    {   
+        "question": "Late?",
+        "last_answer": false,
+        "name": "Late",        
+        "father": "Alimento"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Cachorro",        
+        "father": "Late",
+        "termination": ""
+    }
+    {   
+        "question": "Mia?",
+        "last_answer": false,
+        "name": "Mia",        
+        "father": "Late"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Gato",        
+        "father": "Mia",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Hamster",        
+        "father": "Mia",
+        "termination": ""
+    }
+    {   
+        "question": "É silvestre?",
+        "last_answer": false,
+        "name": "Inseto",        
+        "father": "Mamífero"
+    }
+    {   
+        "question": "Voa?",
+        "last_answer": true,
+        "name": "Inseto Voador",        
+        "father": "Inseto"
+    }
+    {   
+        "question": "Transmite doenças a humanos?",
+        "last_answer": true,
+        "name": "Doença",        
+        "father": "Inseto Voador"
+    }
+    {   
+        "question": "É encontrado em sua maioria em áreas rurais?",
+        "last_answer": true,
+        "name": "Rural",        
+        "father": "Doença"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Barbeiro",        
+        "father": "Rural",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Mosquito",        
+        "father": "Rural",
+        "termination": ""
+    }
+    {   
+        "question": "Produz mel?",
+        "last_answer": false,
+        "name": "Mel",        
+        "father": "Doença"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Abelha",        
+        "father": "Mel",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Borboleta",        
+        "father": "Mel",
+        "termination": "a"
+    }
+    {   
+        "question": "É um aracnídeo?",
+        "last_answer": false,
+        "name": "Aracnídeo",        
+        "father": "Inseto Voador"
+    }
+    {   
+        "question": "Solta teia?",
+        "last_answer": true,
+        "name": "Teia",        
+        "father": "Aracnídeo"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Aranha",        
+        "father": "Teia",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Escorpião",        
+        "father": "Teia",
+        "termination": ""
+    }
+    {   
+        "question": "Possui patas?",
+        "last_answer": false,
+        "name": "Patas",        
+        "father": "Aracnídeo"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Formiga",        
+        "father": "Patas",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Minhoca",        
+        "father": "Patas",
+        "termination": "a"
+    }
+    {   
+        "question": "É uma ave?",
+        "last_answer": false,
+        "name": "Ave",        
+        "father": "Inseto"
+    }
+    {   
+        "question": "Voa?",
+        "last_answer": true,
+        "name": "Ave Voadora",        
+        "father": "Ave"
+    }
+    {   
+        "question": "É carnívora?",
+        "last_answer": true,
+        "name": "Carnívora",        
+        "father": "Ave Voadora"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Gavião",        
+        "father": "Carnívora",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Tucano",        
+        "father": "Carnívora",
+        "termination": ""
+    }
+    {   
+        "question": "Pussui penas?",
+        "last_answer": false,
+        "name": "Pena",        
+        "father": "Ave Voadora"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Galinha",        
+        "father": "Pena",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Pinguim",        
+        "father": "Pena",
+        "termination": ""
+    }
+    {   
+        "question": "É um réptil?",
+        "last_answer": false,
+        "name": "Réptil",        
+        "father": "Ave"
+    }
+    {   
+        "question": "Possui patas?",
+        "last_answer": true,
+        "name": "Réptil Patas",        
+        "father": "Réptil"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Jacaré",        
+        "father": "Réptil Patas",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Cobra",        
+        "father": "Réptil Patas",
+        "termination": "a"
+    }
+    {   
+        "question": "É um anfíbio?",
+        "last_answer": true,
+        "name": "Anfíbio",        
+        "father": "Réptil"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Sapo",        
+        "father": "Anfíbio",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Peixe",        
+        "father": "Anfíbio",
+        "termination": ""
+    }
+    {   
+        "question": "É uma ferramenta?",
+        "last_answer": false,
+        "name": "Ferramenta",        
+        "father": "Raiz"
+    }
+    {   
+        "question": "Precisa de eletricidade para ter utilidade?",
+        "last_answer": true,
+        "name": "Elericidade",        
+        "father": "Ferramenta"
+    }
+    {   
+        "question": "Possui algum tipo de teclado?",
+        "last_answer": true,
+        "name": "Teclado",        
+        "father": "Elericidade"
+    }
+    {   
+        "question": "Possui uma única função?",
+        "last_answer": true,
+        "name": "Função única",        
+        "father": "Teclado"
+    }
+    {   
+        "question": "Possui algum tipo de visor/display?",
+        "last_answer": true,
+        "name": "Visor",        
+        "father": "Função única"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Calculadora",        
+        "father": "Visor",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Controle Remoto",        
+        "father": "Visor",
+        "termination": ""
+    }
+    {   
+        "question": "Cabe no bolso?",
+        "last_answer": false,
+        "name": "Bolso",        
+        "father": "Função única"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Celular",        
+        "father": "Bolso",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Notebook",        
+        "father": "Bolso",
+        "termination": ""
+    }
+    {   
+        "question": "Possui algum tipo botão no objeto?",
+        "last_answer": false,
+        "name": "Botões",        
+        "father": "Teclado"
+    }
+    {   
+        "question": "É utilizado para marcar o tempo?",
+        "last_answer": true,
+        "name": "Tempo",        
+        "father": "Botões"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Relógio",        
+        "father": "Tempo",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Furadeira",        
+        "father": "Tempo",
+        "termination": "a"
+    }
+    {   
+        "question": "É utilizado para iluminar?",
+        "last_answer": false,
+        "name": "Luz",        
+        "father": "Botões"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Lâmpada",        
+        "father": "Luz",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Carregador de celular",        
+        "father": "Luz",
+        "termination": ""
+    }
+    {   
+        "question": "É utilizado para cortar coisas?",
+        "last_answer": false,
+        "name": "Cortante",        
+        "father": "Elericidade"
+    }
+    {   
+        "question": "É utilizado para cortar madeira?",
+        "last_answer": true,
+        "name": "Madeira",        
+        "father": "Cortante"
+    }
+    {   
+        "question": "Possui dentes?",
+        "last_answer": true,
+        "name": "Dentes",        
+        "father": "Madeira"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Serra",        
+        "father": "Dentes",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Machado",        
+        "father": "Dentes",
+        "termination": ""
+    }
+    {   
+        "question": "É utilizado para cortar papel?",
+        "last_answer": false,
+        "name": "Papel",        
+        "father": "Madeira"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Tesoura",        
+        "father": "Papel",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Faca",        
+        "father": "Papel",
+        "termination": "a"
+    }
+    {   
+        "question": "É utilizado em construções e obras?",
+        "last_answer": false,
+        "name": "Obras",        
+        "father": "Cortante"
+    }
+    {   
+        "question": "É utilizado em pregos?",
+        "last_answer": true,
+        "name": "Prego",        
+        "father": "Obras"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Martelo",        
+        "father": "Prego",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Chave de fenda",        
+        "father": "Prego",
+        "termination": "a"
+    }
+    {   
+        "question": "Possui tinta em seu interior?",
+        "last_answer": false,
+        "name": "Tinta",        
+        "father": "Obras"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Caneta",        
+        "father": "Tinta",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Lápis",        
+        "father": "Tinta",
+        "termination": ""
+    }
+    {   
+        "question": "É um tipo vestimento?",
+        "last_answer": false,
+        "name": "Vestimenta",        
+        "father": "Ferramenta"
+    }
+    {   
+        "question": "É um acessório?",
+        "last_answer": true,
+        "name": "Acessório",        
+        "father": "Vestimenta"
+    }
+    {   
+        "question": "É utilizado na parte do braço?",
+        "last_answer": true,
+        "name": "Braço",        
+        "father": "Acessório"
+    }
+    {   
+        "question": "É utilizado no dedo?",
+        "last_answer": true,
+        "name": "Dedo",        
+        "father": "Braço"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Anel",        
+        "father": "Dedo",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Pulseira",        
+        "father": "Dedo",
+        "termination": "a"
+    }
+    {   
+        "question": "É utilizado no pescoço?",
+        "last_answer": false,
+        "name": "Pescoço",        
+        "father": "Braço"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Cordão",        
+        "father": "Pescoço",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Chapéu",        
+        "father": "Pescoço",
+        "termination": ""
+    }
+    {   
+        "question": "É um traje de banho?",
+        "last_answer": false,
+        "name": "Banho",        
+        "father": "Acessório"
+    }
+    {   
+        "question": "É masculino?",
+        "last_answer": true,
+        "name": "Masculino",        
+        "father": "Banho"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Sunga",        
+        "father": "Masculino",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Biquini",        
+        "father": "Masculino",
+        "termination": ""
+    }
+    {   
+        "question": "É uma roupa de frio?",
+        "last_answer": false,
+        "name": "Frio",        
+        "father": "Banho"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Casaco",        
+        "father": "Frio",
+        "termination": ""
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Camisa",        
+        "father": "Frio",
+        "termination": "a"
+    }
+    {   
+        "question": "É um alimento?",
+        "last_answer": false,
+        "name": "Alimento",        
+        "father": "Vestimenta"
+    }
+    {   
+        "question": "É uma fruta?",
+        "last_answer": true,
+        "name": "Fruta",        
+        "father": "Alimento"
+    }
+    {   
+        "question": "É amarela?",
+        "last_answer": true,
+        "name": "Amarela",        
+        "father": "Fruta"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Banana",        
+        "father": "Amarela",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Maça",        
+        "father": "Amarela",
+        "termination": "a"
+    }
+    {   
+        "question": "É um legume?",
+        "last_answer": false,
+        "name": "Legume",        
+        "father": "Fruta"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Batata",        
+        "father": "Legume",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Biscoito",        
+        "father": "Legume",
+        "termination": ""
+    }
+    {   
+        "question": "É bastante valioso financeiramente?",
+        "last_answer": false,
+        "name": "Valioso",        
+        "father": "Alimento"
+    }
+    {   
+        "question": "É um metal?",
+        "last_answer": true,
+        "name": "Metal",        
+        "father": "Valioso"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Pepita de ouro",        
+        "father": "Metal",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Diamante",        
+        "father": "Metal",
+        "termination": ""
+    }
+    {   
+        "question": "É um vegetal?",
+        "last_answer": false,
+        "name": "Vegetal",        
+        "father": "Valioso"
+    }
+    {   
+        "question": null,
+        "last_answer": true,
+        "name": "Árvore",        
+        "father": "Vegetal",
+        "termination": "a"
+    }
+    {   
+        "question": null,
+        "last_answer": false,
+        "name": "Pedra",        
+        "father": "Vegetal",
+        "termination": "a"
+    }
+    

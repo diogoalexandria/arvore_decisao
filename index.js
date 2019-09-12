@@ -31,7 +31,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/game', (req, res, next) => {
-    let node_name = req.query.name || 'Raiz'    
+    let node_name = req.query.name || 'Raiz'       
     Node.find({$or: [{name: node_name}, {father: node_name}]}, (err, nodes) => {
         if(!err) {
             var button_condition = true
