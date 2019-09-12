@@ -6,16 +6,22 @@
     },
     {   
         "question": "Late?",
-        "node": "Animal",
+        "last_answer": true,
+        "node": "Animal",        
         "father": "Raiz"
     },
     {
+        "question": "Late?",
+        "last_answer": true,
         "node": "Objeto",
         "father": "Raiz"
     },
-    {
+    {       
+        "question": null,
+        "last_answer": true,
         "node": "Vaca",
-        "father": "Animal"
+        "father": "Animal",
+        "termination": "a"
     },
     {
         "node": "Cachorro",

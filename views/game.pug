@@ -1,0 +1,48 @@
+html(lang="pt")
+    head
+        title Inteligencia computacional
+        script(src="https://unpkg.com/axios/dist/axios.min.js")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")          
+    body        
+        div(class="container" style="margin-top: 100px")            
+            div(class="row align-items-center")
+                div(class="col")                
+                div(class="col-md-offset-5")
+                    div()
+                        h1 #{message}
+                    div(class="d-flex justify-content-center")                        
+                        - var btnSize = 'lg'                        
+                        if final_answer                            
+                            button(type='button' style="margin-right: 10px; margin-top: 20px" class=`btn btn-${btnSize} btn-success` onclick=`postFunction('${button_yes}')`) Sim                                                    
+                            button(type='button' style="margin-left: 10px; margin-top: 20px" class=`btn btn-${btnSize} btn-danger` onclick=`postFunction('${button_no}')`) Não
+                        if !final_answer
+                            button(type='button' style="margin-top: 20px" class=`btn btn-info btn-${btnSize}` onclick='getFunction()') Restart
+                div(class="col")
+            div(class="row align-items-end")
+        script.
+            var postFunction = (name_button) => {                               
+                axios.post('/answer', {
+                        name: name_button                        
+                    })
+                    .then((res) => {                        
+                        const url = res.request.responseURL
+                        window.location.replace(url)                        
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                    })
+            }
+            var getFunction = () => {
+                axios.get('/game')
+                    .then((res) => {
+                        const url = res.request.responseURL
+                        console.log(url)
+                        window.location.replace(url)
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                    })
+            }       
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")    
