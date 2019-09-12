@@ -1,39 +1,108 @@
-[
-    {
-        "question": "É um animal?", 
-        "node": "Raiz",
-        "father": null
-    },
-    {   
-        "question": "Late?",
-        "last_answer": true,
-        "node": "Animal",        
-        "father": "Raiz"
-    },
-    {
-        "question": "Late?",
-        "last_answer": true,
-        "node": "Objeto",
-        "father": "Raiz"
-    },
-    {       
-        "question": null,
-        "last_answer": true,
-        "node": "Vaca",
-        "father": "Animal",
-        "termination": "a"
-    },
-    {
-        "node": "Cachorro",
-        "father": "Animal"
-    },
-    {
-        "node": "Martelo",
-        "father": "Objeto"
-    },
-    {
-        "node": "Lápis",
-        "father": "Objeto"
-    }
-
-]
+{
+    "question": "É um animal?", 
+    "node": "Raiz",
+    "father": null
+}
+{   
+    "question": "É mamífero?",
+    "last_answer": true,
+    "node": "Mamífero",        
+    "father": "Raiz"
+}
+{   
+    "question": "É silvestre?",
+    "last_answer": true,
+    "node": "Silvestre",        
+    "father": "Mamífero"
+}
+{   
+    "question": "É carnívoro?",
+    "last_answer": true,
+    "node": "Carnívoro",        
+    "father": "Silvestre"
+}
+{   
+    "question": "É felino?",
+    "last_answer": true,
+    "node": "Felino",        
+    "father": "Carnívoro"
+}
+{   
+    "question": "Tem juba?",
+    "last_answer": true,
+    "node": "Juba",        
+    "father": "Felino"
+}
+{   
+    "question": null,
+    "last_answer": true,
+    "node": "Leão",        
+    "father": "Juba",
+    "termination": ""
+}
+{   
+    "question": null,
+    "last_answer": false,
+    "node": "Tigre",        
+    "father": "Juba",
+    "termination": ""
+}
+{   
+    "question": "É aquático?",
+    "last_answer": false,
+    "node": "Aquático",        
+    "father": "Felino"
+}
+{   
+    "question": null,
+    "last_answer": true,
+    "node": "Baleia",        
+    "father": "Aquático",
+    "termination": "a"
+}
+{   
+    "question": null,
+    "last_answer": false,
+    "node": "Urso",        
+    "father": "Aquático",
+    "termination": ""
+}
+{   
+    "question": "Anda em 4 patas?",
+    "last_answer": false,
+    "node": "Quatro patas",        
+    "father": "Carnívoro"
+}
+{   
+    "question": "Possui tromba?",
+    "last_answer": true,
+    "node": "Tromba",        
+    "father": "Quatro patas"
+}
+{   
+    "question": null,
+    "last_answer": false,
+    "node": "Girafa",        
+    "father": "Tromba",
+    "termination": "a"
+}
+{   
+    "question": "É voador?",
+    "last_answer": false,
+    "node": "Voador",        
+    "father": "Quatro patas"
+}
+{   
+    "question": null,
+    "last_answer": true,
+    "node": "Morcego",        
+    "father": "Voador",
+    "termination": ""
+}
+{   
+    "question": null,
+    "last_answer": false,
+    "node": "Macaco",        
+    "father": "Voador",
+    "termination": ""
+}
